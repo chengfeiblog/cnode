@@ -1,0 +1,21 @@
+<table class="table table-hover text-center">
+    <tbody>
+    <tr *ngFor="let topic of topics">
+        <td>
+            <avatar [author]="topic.author"></avatar>
+        </td>
+        <td>
+            <span class="reply_count">
+                <span class="count_of_replies">{{topic.reply_count}}</span>/<span class="count_of_visits">{{topic.visit_count}}</span>
+        </span>
+        </td>
+        <td class="table-text">
+            <topic-title [topic]="topic"></topic-title>
+        </td>
+        <td>
+            <avatar [author]="topic.author"></avatar>
+        </td>
+        <td class="va-middle"><span class="topic-time">{{topic.last_reply_at | createTime}}</span></td>
+    </tr>
+    </tbody>
+</table>

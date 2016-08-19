@@ -1,0 +1,44 @@
+<div class="loading" *ngIf="loading">
+    <span class="dots-loader">Loading…</span>
+</div>
+<div class="row-flex">
+    <div class="flex3" style="margin-right: 15px">
+        <div class="head">
+            <a>全部</a>
+            <a>精华</a>
+            <a>分享</a>
+            <a>问答</a>
+            <a>招聘</a>
+        </div>
+        <div class="topic_list">
+            <cell [topics]="topics"></cell>
+            <!--分页插件-->
+            <pagination [boundaryLinks]="true"
+                        [totalItems]="totalItems"
+                        [(ngModel)]="currentPage"
+                        [itemsPerPage]="itemsPerPage"
+                        [maxSize]="maxSize"
+                        [rotate]="false"
+                        (pageChanged)="pageChanged($event)"
+                        (numPages)="numPages = $event"
+                        class="pagination-sm"
+                        previousText="&lsaquo;"
+                        nextText="&rsaquo;"
+                        firstText="&laquo;"
+                        lastText="&raquo;">
+            </pagination>
+        </div>
+    </div>
+    <div class="flex1">
+        <div class="panel">
+            <div class="panel-body">
+                <div>CNode：Node.js专业中文社区</div>
+
+                <div class="mt15">您可以 登录 或 注册</div>
+                <button class="btn btn-primary">通过 GitHub 登录</button>
+            </div>
+        </div>
+    </div>
+</div>
+
+

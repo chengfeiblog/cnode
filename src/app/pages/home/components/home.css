@@ -1,0 +1,42 @@
+.content{
+  padding: 0;
+  float: left;
+}
+.sidebar{
+  width: 290px;
+  font-size: 14px;
+  float: right;
+  margin-bottom: 20px;
+}
+.head{
+  padding: 10px;
+  background-color: #f6f6f6;
+  border-radius: 3px 3px 0 0;
+  width: 100%;
+}
+.head a{
+  color: #80bd01;
+  margin: 0 15px;
+}
+.head a:hover{
+  color: #2aabd2;
+  text-decoration: none;
+  cursor: pointer;
+}
+.topic_list{
+  background-color: #fff;
+}
+.mt15{
+  margin-top: 15px;
+}
+.row-flex{
+  display: flex;
+  flex-direction: row;
+}
+.flex1{
+  flex: 1;
+}
+.flex3{
+  flex: 3;
+}
+

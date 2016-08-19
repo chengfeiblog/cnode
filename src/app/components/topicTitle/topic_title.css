@@ -1,0 +1,24 @@
+.text-green {
+    display: inline-block;
+    width: 30px;
+    height: 19px;
+    color: #fff;
+    background-color: #80bd01;
+}
+
+.text-gray {
+    display: inline-block;
+    width: 30px;
+    height: 19px;
+    background-color: #999;
+    color: #fff;
+}
+
+.topic-title {
+    display: inline-block;
+    max-width: 70%;
+    height: 19px;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    cursor: pointer;
+}

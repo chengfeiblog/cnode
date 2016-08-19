@@ -1,0 +1,8 @@
+<span *ngIf="topic.top" class="text-green">置顶</span>
+<span *ngIf="topic.good" class="text-green">精华</span>
+<span *ngIf="!topic.top && !!topic.tab && !topic.good">
+                <span *ngIf="topic.tab == 'share'" class="text-gray">分享</span>
+                <span *ngIf="topic.tab == 'ask'" class="text-gray">问答</span>
+                <span *ngIf="topic.tab == 'job'" class="text-gray">招聘</span>
+            </span>
+<a class="topic-title" (click)="goToTopicContent(topic.id)">{{topic.title}}</a>

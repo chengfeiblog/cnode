@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="">
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="x-ua-compatible" content="ie=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <title>angular2</title>
+
+  <link rel="stylesheet" href="assets/libs/css/bootstrap.css">
+  <link rel="stylesheet" href="assets/libs/font-awesome-4.2.0/css/font-awesome.min.css">
+
+
+  <meta name="description" content="angular2">
+
+  <% if (webpackConfig.htmlElements.headTags) { %>
+  <!-- Configured Head Tags  -->
+  <%= webpackConfig.htmlElements.headTags %>
+  <% } %>
+
+  <!-- base url -->
+  <base href="<%= webpackConfig.metadata.baseUrl %>">
+
+
+</head>
+
+<body>
+
+<app id="app">
+  <div class="loading">
+    <span class="dots-loader">Loading…</span>
+  </div>
+</app>
+
+
+  <% if (webpackConfig.metadata.isDevServer) { %>
+  <!-- Webpack Dev Server reload -->
+  <script src="/webpack-dev-server.js"></script>
+  <% } %>
+
+
+</body>
+</html>

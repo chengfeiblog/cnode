@@ -1,0 +1,24 @@
+.navbar {
+    background: #444;
+}
+.pd5 {
+    padding: 5px;
+}
+.navbar a{
+    color: #ccc;
+}
+.navbar a:hover{
+    color: #2aabd2;
+}
+.brand {
+    float: left;
+    width: 120px;
+    height: 28px;
+}
+.search{
+    margin-top: 2px;
+    float: left;
+}
+.search-query{
+    border-radius: 15px;
+}

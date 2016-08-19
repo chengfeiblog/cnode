@@ -1,0 +1,35 @@
+.reply_count {
+    height: 30px;
+    line-height: 30px;
+    text-align: center;
+}
+
+.count_of_replies {
+    color: #9e78c0;
+}
+
+.count_of_visits {
+    font-size: 10px;
+    color: #b4b4b4;
+}
+
+.cell :hover {
+    background-color: #f5f5f5 !important;
+}
+
+.table-text {
+    text-align: left;
+    vertical-align: middle;
+}
+
+.topic-time {
+    display: inline-block;
+    height: 19px;
+    line-height: 19px;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+
+.va-middle {
+    vertical-align: middle;
+}
